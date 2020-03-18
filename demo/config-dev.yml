@@ -1,0 +1,6 @@
+spring:
+  profiles: dev
+  application:
+    name: config-dev11111
+server:
+  port: 8081
