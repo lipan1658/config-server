@@ -1,0 +1,37 @@
+spring:
+  profiles:
+    active:
+      - dev
+eureka:
+  instance:
+    hostname: localhost
+    prefer-ip-address: true
+    instance-id: config-client-9001
+  client:
+    service-url:
+      defaultZone: http://eureka7001:7001/eureka/,http://eureka7002:7002/eureka/,http://eureka7003:7003/eureka/
+#info信息
+info:
+  app:
+    name: config-client-9001
+  company:
+    name: www.xxx.com
+  build:
+    artifactId: @project.artifactId@
+    version: @project.version@
+    
+---
+spring:
+  profiles: dev
+  application:
+    name: config-dev
+server:
+  port: 8081
+
+---
+spring:
+  profiles: test
+  application:
+    name: config-test
+server:
+  port: 8082
