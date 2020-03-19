@@ -16,7 +16,7 @@ info:
 spring:
   profiles: dev
   application:
-    name: config-dev
+    name: config-dev12
 server:
   port: 8081
 
