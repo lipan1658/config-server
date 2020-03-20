@@ -1,4 +1,6 @@
 spring:
+  application:
+    name: provider
   profiles:
     active:
       - dev
@@ -13,9 +15,6 @@ info:
     version: ${project.version}
 server:
   port: 8001
-spring:
-  application:
-    name: provider
 eureka:
   instance:
     hostname: localhost
