@@ -1,18 +1,7 @@
 spring:
-  application:
-    name: provider
   profiles:
     active:
       - test
-#info信息
-info:
-  app:
-    name: provider-8002
-  company:
-    name: www.xxx.com
-  build:
-    artifactId: ${project.artifactId}
-    version: ${project.version}
 server:
   port: 8002
 eureka:
