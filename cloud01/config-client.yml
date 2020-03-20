@@ -5,7 +5,7 @@ spring:
 #info信息
 info:
   app:
-    name: config-client-9001
+    name: config-client-8081
   company:
     name: www.xxx.com
   build:
@@ -16,7 +16,7 @@ info:
 spring:
   profiles: dev
   application:
-    name: config-dev
+    name: config-dev12
 server:
   port: 8081
 
