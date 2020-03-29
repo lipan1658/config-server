@@ -10,7 +10,7 @@ eureka:
     prefer-ip-address: true
     instance-id: provider-8002
   client:
-    service-url:
+    serviceUrl:
       defaultZone: http://localhost:7001/eureka/
 text: abcd================
  
